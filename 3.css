@@ -1,0 +1,115 @@
+:root 
+{
+    --main-color: #e0f2f1n;
+}
+p
+{
+    color: red;
+    font-family: Arial;
+    font-size: 10px;
+}
+
+.class1
+{
+    color: yellow;
+    font-family: cursive;
+    font-size: 10px;
+}
+
+#id1
+{
+    color: green;
+    font-size: 10px;
+}
+
+section i
+{
+    color: blue;
+}
+
+section > p
+{
+    color: orange;
+}
+
+p ~ p
+{
+    color: rgb(177, 185, 63);
+}
+
+i + i
+{
+    font-size: 20px;
+}
+
+a
+{
+    color:black;
+    color: var(--main-color);
+    font-size: 50px;
+}
+
+a:hover
+{
+    color: var(--main-color);
+    background-color: black;
+
+}
+a:visited 
+{ 
+    color: rebeccapurple; 
+}
+
+.quote
+{
+    /*-main-color: brown;*/
+    left:calc(100%/3+1cm);
+    width: calc(100%/3-12px);
+    color: var(--main-color);
+}
+
+.quote:before 
+{
+    content: "''";
+    font-size: 20px;
+}
+
+.quote:after 
+{
+    content: "''";
+    font-size: 20px;
+}
+
+.class2
+{
+    font-size: 1rem;
+}
+
+p.class1
+{
+    caret-color: green;
+    font-size: 1em;
+    color: red;
+}
+
+p.class2
+{
+    caret-color: green;
+    font-size: 1rem;
+    color: red;
+}
+
+
+.font1
+{
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1em;
+} 
+
+.font2
+{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 5em;
+} 
