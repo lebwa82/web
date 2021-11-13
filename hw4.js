@@ -1,7 +1,6 @@
-
+'use strict';
 let func=function square(a)
-{
-    'use strict';
+{   
     globalThis["m"] = "Hi hI";
     return a*a;
 }
@@ -26,10 +25,10 @@ for (let i of Object.keys(o))
     console.log(o[i]);
 }
 
-mass=[1,2,3];
+let mass=[1,2,3];
 console.log(typeof(o),typeof(a), typeof(mass), typeof(Object.keys(o)));
 
-summ = (mass) =>
+let summ = (mass) =>
 {
     let count=0;
     for(let i of mass)
