@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 let func=function square(a)
 {   
     globalThis["m"] = "Hi hI";
@@ -6,11 +6,15 @@ let func=function square(a)
 }
 console.log(func(5));
 console.log(globalThis["m"]);
+
 {
     var a=1;
     let b=2;
+    let m='new local m';
+    console.log(m);
 }
-
+console.log(globalThis["m"]);
+delete globalThis["m"];
 console.log("a =",a);
 //console.log("b =",b); as it was intended - it gives an error
 
