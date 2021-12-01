@@ -63,9 +63,13 @@ function stopPropagation(event)
     event.stopPropagation();
 }
 
+const capture = {
+    capture : true
+  };
+
 let cliock_elem=document.createElement('p');
 cliock_elem.textContent="Кликни меня"
-cliock_elem.addEventListener("click", stopPropagation, true);
+cliock_elem.addEventListener("click", stopPropagation, capture);
 document.body.appendChild(cliock_elem);
 
 
