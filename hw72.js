@@ -10,13 +10,8 @@ fetch("hw72.php", {
   method: "post",
   body: JSON.stringify(data)
   })
-.then((result) => {
-  return result.json();
-})
-.then((data) => {
-  console.log(data);
-})
-.catch((error) => {
-  console.log(error.message);
-});
+.then(result =>  result.json() )
+.then(console.log)
+.catch(error => { console.log('Error: ' + err.message); });
+
   
