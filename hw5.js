@@ -87,7 +87,7 @@ Object.defineProperty(Object2, "name",{
     configurable: true,
     set: function(x) {
         this.who = x; 
-        //this.name = x; выдает ошибку почему-то 
+        //this.name = x; //выдает ошибку почему-то 
         console.log("a =", x);
     }
 });
